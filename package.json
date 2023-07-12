@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/jasonruesch/last-successful-commit-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0",
-    "@vercel/ncc": "^0.25.1"
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "@vercel/ncc": "^0.36.1"
   }
 }
