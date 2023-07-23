@@ -1,3 +1,20 @@
+> **Warning**<br>
+This action has been deprecated in favor of [Nx-Set-Shas](https://github.com/marketplace/actions/nx-set-shas):
+```yaml
+- name: Get Last Successful Commit
+  id: setSHAs
+  uses: nrwl/nx-set-shas@latest
+  with:
+    main-branch-name: ${{ github.ref_name }}
+    workflow-id: deploy.yml
+
+- run: |
+    echo "BASE: ${{ env.NX_BASE }} or ${{ steps.setSHAs.outputs.base }}"
+    echo "HEAD: ${{ env.NX_HEAD }} or ${{ steps.setSHAs.outputs.head }}"
+```
+
+---
+
 # "Last successful commit" action
 
 This action returns the commit hash when a given workflow was last successful.
